@@ -1,0 +1,141 @@
+
+/* ===== GENERAL DESIGN ===== */
+
+:root {
+  --lavender: #c8a2e8;
+  --purple: #9370db;
+  --dark: #30243b;
+  --light: #fcfaff;
+  --soft: #f1e8fa;
+}
+
+body {
+  background: var(--light) !important;
+  color: var(--dark) !important;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* ===== NAVIGATION ===== */
+
+header {
+  background: rgba(255, 255, 255, 0.95) !important;
+  padding: 20px 8% !important;
+  box-shadow: 0 4px 20px #9370db18 !important;
+}
+
+.logo {
+  color: var(--purple) !important;
+  letter-spacing: 1px;
+}
+
+nav a {
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--purple) !important;
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+  background: linear-gradient(
+    135deg,
+    #fcfaff,
+    #eee1fa,
+    #dfc9f2
+  ) !important;
+}
+
+.tag {
+  letter-spacing: 3px !important;
+}
+
+h1 span {
+  color: var(--purple) !important;
+}
+
+.hero p {
+  line-height: 2 !important;
+}
+
+/* ===== BUTTONS ===== */
+
+.btn {
+  transition: all 0.3s ease !important;
+}
+
+.primary {
+  background: var(--purple) !important;
+  box-shadow: 0 6px 18px #9370db40;
+}
+
+.primary:hover {
+  background: #7955b7 !important;
+}
+
+.secondary {
+  border-color: var(--purple) !important;
+  color: var(--purple) !important;
+}
+
+/* ===== SECTIONS ===== */
+
+section {
+  scroll-margin-top: 85px;
+}
+
+.section-title span {
+  color: var(--purple) !important;
+}
+
+.about {
+  line-height: 2.1 !important;
+}
+
+/* ===== SKILLS ===== */
+
+.skills {
+  background: #f3ebfb !important;
+}
+
+.skill {
+  border: 1px solid #e7d7f5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px #9370db25;
+}
+
+/* ===== CONTACT & FOOTER ===== */
+
+.contact {
+  background: #fcfaff;
+}
+
+footer {
+  background: #30243b !important;
+  color: #eee3fa !important;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+
+@media (max-width: 650px) {
+  header {
+    padding: 18px 5% !important;
+  }
+
+  .hero {
+    padding: 65px 7% !important;
+  }
+
+  h1 {
+    font-size: 40px !important;
+  }
+
+  nav a {
+    margin: 0 6px !important;
+  }
+}
