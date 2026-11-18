@@ -235,3 +235,73 @@ footer {
     padding: 25px;
   }
 }
+
+/* ===== EDUCATION SECTION ===== */
+
+.education {
+  background: #f5effb;
+}
+
+.education-card {
+  max-width: 750px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 30px;
+  background: white;
+  border: 1px solid #eadcf6;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px #9370db12;
+}
+
+.education-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #eee2fa;
+  color: #9370db;
+  border-radius: 14px;
+  font-size: 23px;
+}
+
+.education-label {
+  color: #9370db;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.education-card h3 {
+  margin: 10px 0;
+  color: #49345f;
+  font-size: 19px;
+}
+
+.education-card p {
+  color: #81738c;
+  line-height: 1.8;
+}
+
+.education-status {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 6px 13px;
+  background: #f1e8fa;
+  color: #8965b5;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+@media(max-width: 500px) {
+  .education-card {
+    padding: 22px;
+    gap: 14px;
+  }
+
+  .education-card h3 {
+    font-size: 16px;
+  }
+}
+
